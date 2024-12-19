@@ -278,11 +278,11 @@ def compute_gradients(I1, I2):
 
 Код:
 
-def lucas_kanade_optical_flow(I1, I2, window_size=5):
-    Ix, Iy, It = compute_gradients(I1, I2)  
-    cv2_imshow(Ix)  
-    cv2_imshow(Iy)  
-    cv2_imshow(It)  
+    def lucas_kanade_optical_flow(I1, I2, window_size=5):
+        Ix, Iy, It = compute_gradients(I1, I2)  
+        cv2_imshow(Ix)  
+        cv2_imshow(Iy)  
+        cv2_imshow(It)  
 
     half_window = window_size // 2
     h, w = I1.shape
